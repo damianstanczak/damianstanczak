@@ -1,8 +1,25 @@
-/* ... (inne style) ... */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #007bff; /* Niebieskie tło */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-button#copyButton {
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
   padding: 10px 20px;
-  background-color: #28a745; /* Zielony kolor tła */
+  background-color: #28a745; /* Zielony kolor tła przycisku "Generuj Hasło" */
   color: white;
   border: none;
   border-radius: 20px; /* Zaokrąglone przyciski */
@@ -11,6 +28,16 @@ button#copyButton {
   transition: background-color 0.3s ease; /* Efekt przejścia koloru tła */
 }
 
-button#copyButton.hidden {
-  display: none; /* Ukryj przycisk "Kopiuj Hasło" domyślnie */
+button:hover {
+  background-color: #218838; /* Kolor tła przycisku po najechaniu kursorem */
+}
+
+button#copyButton {
+  background-color: #007bff; /* Niebieski kolor tła przycisku "Kopiuj Hasło" */
+}
+
+#passwordDisplay {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
 }
