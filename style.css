@@ -1,0 +1,16 @@
+/* ... (inne style) ... */
+
+button#copyButton {
+  padding: 10px 20px;
+  background-color: #28a745; /* Zielony kolor tła */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Zaokrąglone przyciski */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Efekt przejścia koloru tła */
+}
+
+button#copyButton.hidden {
+  display: none; /* Ukryj przycisk "Kopiuj Hasło" domyślnie */
+}
